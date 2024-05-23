@@ -8,11 +8,11 @@ const userSchema = new Schema({
   },
   surname: {
     type: String, 
-    min:3
+    
   },
   othernames: {
     type: String,
-    min:3
+    
   }, 
   email: {
     type: String,
@@ -27,24 +27,24 @@ const userSchema = new Schema({
   username: {
     type: String,
     unique: [true, 'Username already exists'],
-    min: 6,
+    
 
   },
   bio: {
     type: String,
-    max: 200,
+    
   },
   occupation: {
     type: String,
-    min:5
+    
   },
   address: {
     typr: String,
-  max: 100,
+  
   },
   ward: {
     type: String,
-    max: 10,
+    
   }
   
 });
